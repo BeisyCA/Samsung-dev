@@ -78,8 +78,8 @@ const validateInputs = () => {
 
     if(passwordValue === '') {
         setError(password, 'Rellene este campo');
-    } else if (passwordValue.length < 8 ) {
-        setError(password, 'La Clave debe tener al menos 8 caracteres .')
+    } else if (passwordValue.length > 8 ) {
+        setError(password, 'La Clave debe tener maximo 8 caracteres .')
     } else {
         setSuccess(password);
     }
